@@ -31,8 +31,8 @@ public class CameraController : MonoBehaviour{
 
         }
 
-        // Switch between following and default by pressing space
-        if (Input.GetKeyDown("space")) followStick = !followStick;
+        // Switch between following and default by pressing x
+        if (Input.GetKeyDown("x")) followStick = !followStick;
 
     }
 
