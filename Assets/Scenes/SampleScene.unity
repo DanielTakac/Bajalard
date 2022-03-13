@@ -654,6 +654,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &804215143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6549052435272794055, guid: 9051e9c7d4fcca94c9a9c5b7c90c7312, type: 3}
+  m_PrefabInstance: {fileID: 175311993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &804215147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804215143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b4ad43fea8c2041bf6347aecbcf293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &925850317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 925850317, guid: 9051e9c7d4fcca94c9a9c5b7c90c7312, type: 3}
@@ -758,7 +775,7 @@ MonoBehaviour:
   stick: {fileID: 925850317}
   defaultPosition: {x: 1.617, y: 1.731, z: 0}
   defaultRotation: {x: 0.17745762, y: -0.68447703, z: 0.17745762, w: 0.68447703}
-  followOffset: {x: 0, y: 0, z: 0}
+  followOffset: {x: 0, y: 0.24, z: -0.18}
 --- !u!1 &1200098694
 GameObject:
   m_ObjectHideFlags: 0

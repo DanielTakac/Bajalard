@@ -12,7 +12,7 @@ public class StickMovement : MonoBehaviour{
 
     void Update(){
 
-
+        //if(Input.GetKey("a")) transform.position += new Vector3()
         
     }
 
