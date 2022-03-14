@@ -18,12 +18,19 @@ public class GroundColorChanger : MonoBehaviour{
 
     void Update() {
     
+        ChangeColor();
+
+    }
+
+    void ChangeColor(){
+
         float h, s, v;
 
         Color.RGBToHSV(rend.material.color, out h, out s, out v);
 
         rend.material.color = Color.HSVToRGB(h + Time.deltaTime * .25f * speed, s, v);
     
+
     }
 
 }
