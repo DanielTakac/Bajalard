@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour{
 
-    [SerializeField] private Transform stick;
+    [SerializeField] private Vector3 primaryPosition;
+    [SerializeField] private Quaternion primaryRotation;
 
-    [SerializeField] private Vector3 defaultPosition;
-    [SerializeField] private Quaternion defaultRotation;
+    [SerializeField] private Vector3 secondaryPosition;
+    [SerializeField] private Quaternion secondaryRotation;
 
-    [SerializeField] private Vector3 followOffset;
-
-    private bool followStick = false;
+    private bool cameraMode = true;
 
     void Update(){
 
-        if (followStick) {
+        if (cameraMode) {
+
+            // Primary camera
+            transform.position = primaryPosition;
+            transform.rotation = primaryRotation;
+
+        } else {
+
+            // Secondary camera
+            transform.position = secondaryPosition;
+            transform.rotation = secondaryRotation;
+
+        }
+
+        // Switch between primary and secondary camera by pressing a button
+        if (Input.GetKeyDown(Keybinds.keybinds["toggleCamera"])) cameraMode = !cameraMode;
+
+        /*if (followStick) {
 
             // Sets the position & rotation of this object to look at the stick
             transform.position = stick.position + followOffset;
-            //transform.rotation = new Quaternion(-stick.rotation.x, -stick.rotation.y, -stick.rotation.z, -stick.rotation.w);
-            //transform.rotation = stick.rotation;
             transform.forward = -stick.forward;
 
         } else {
@@ -32,7 +46,7 @@ public class CameraController : MonoBehaviour{
         }
 
         // Switch between following and default by pressing x
-        if (Input.GetKeyDown("x")) followStick = !followStick;
+        if (Input.GetKeyDown("x")) followStick = !followStick;*/
 
     }
 
