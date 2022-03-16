@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour{
 
     private LineRenderer line;
     private WhiteBall whiteBall;
-    private NormalBall[] balls;
 
     public static int score;
 
@@ -20,7 +19,6 @@ public class GameManager : MonoBehaviour{
 
         line = FindObjectOfType<LineRenderer>();
         whiteBall = FindObjectOfType<WhiteBall>();
-        balls = FindObjectsOfType<NormalBall>();
     
     }
 

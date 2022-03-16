@@ -10,7 +10,7 @@ public class NormalBall : MonoBehaviour{
 
             GameManager.score++;
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
         }
 
