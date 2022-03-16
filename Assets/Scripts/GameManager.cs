@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour{
     private void Update() {
 
         if (Input.GetKeyDown(Keybinds.keybinds["restart"])) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(Keybinds.keybinds["menu"])) Application.Quit();
 
         UpdateText();
 

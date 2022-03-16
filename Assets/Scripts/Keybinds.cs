@@ -7,7 +7,7 @@ public class Keybinds : MonoBehaviour{
     public static readonly Dictionary<string, string> keybinds = new Dictionary<string, string>() {
         {"toggleCamera", "x"},
         {"restart", "r"},
-        {"menu", "esc"},
+        {"menu", "escape"},
         {"left", "a"},
         {"right", "d"},
         {"forward", "w"},
