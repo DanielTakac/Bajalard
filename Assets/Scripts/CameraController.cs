@@ -31,23 +31,6 @@ public class CameraController : MonoBehaviour{
         // Switch between primary and secondary camera by pressing a button
         if (Input.GetKeyDown(Keybinds.keybinds["toggleCamera"])) cameraMode = !cameraMode;
 
-        /*if (followStick) {
-
-            // Sets the position & rotation of this object to look at the stick
-            transform.position = stick.position + followOffset;
-            transform.forward = -stick.forward;
-
-        } else {
-
-            // Sets the position & rotation of this object to default
-            transform.position = defaultPosition;
-            transform.rotation = defaultRotation;
-
-        }
-
-        // Switch between following and default by pressing x
-        if (Input.GetKeyDown("x")) followStick = !followStick;*/
-
     }
 
 }
