@@ -2728,7 +2728,7 @@ MonoBehaviour:
   rotationSpeed: 25
   maxHeight: 1.5
   minHeight: 0.91
-  controlsEnabled: 0
+  controlsEnabled: 1
 --- !u!1001 &1399767910
 PrefabInstance:
   m_ObjectHideFlags: 0
